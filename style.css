@@ -1,0 +1,148 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    /* border-bottom: 3px solid yellow; */
+    transition: 0.3s ease;
+    font-size: 1.5em;
+}
+
+#logo {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+span {
+    color: yellow;
+}
+
+
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+label {
+    display: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+}
+
+ul a {
+    padding: 0.5em;
+}
+
+nav a:hover {
+    color: yellow;
+    border-bottom: 2px solid yellow;
+    text-shadow: 0 0 25px yellow,
+        0 0 50px yellow;
+
+    /* border-radius: 0.5em; */
+}
+
+.active {
+    border-bottom: 2px solid yellow;
+}
+
+
+
+
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+
+.home-content {
+    max-width: 800px;
+
+}
+
+.home-content h3 {
+    font-size: 500px;
+}
+
+.home-content h1 {
+    font-size: 124px;
+    line-height: 1.2;
+}
+
+.home-content p {
+    font-style: 18px;
+    margin: 25px 0 30px;
+}
+
+.btn {
+    width: 345px;
+    display: flex;
+    gap: 2rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    label {
+        display: block;
+    }
+
+    ul {
+        font-size: 1.2em;
+        position: absolute;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #333;
+        gap: 2em;
+        top: 54px;
+        width: 100%;
+        height: calc(100vh - 50px);
+        transition: 0.5s;
+    }
+
+    input[type="checkbox"]:checked~ul {
+        left: 0;
+    }
+
+    nav a:hover {
+        color: yellow;
+        border-bottom: 2px solid yellow;
+        text-shadow: 0 0 25px yellow,
+            0 0 50px yellow;
+    }
+
+}
