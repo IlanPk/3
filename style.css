@@ -6,6 +6,7 @@
 
 
 nav {
+    width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
@@ -67,47 +68,79 @@ nav a:hover {
     border-bottom: 2px solid yellow;
 }
 
-
-
-
-
-.home {
-    width: 100%;
-    min-height: 100vh;
-    background-color: rgb(241, 241, 241);
+.profile {
+    width: 100vw;
+    height: 90vh;
     display: flex;
     align-items: center;
-    gap: 7em;
-    padding: 30px 12% 0;
+    justify-content: space-between;
+    background-image: url(./img/backgraund1.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
-.home-content {
-    max-width: 800px;
+.halo {
+    width: 750px;
+    height: 250px;
+    transform: translate(150px, 120px);
+    text-align: left;
 
 }
 
-.home-content h3 {
-    font-size: 500px;
+.halo h3 {
+    font-size: 2em;
 }
 
-.home-content h1 {
-    font-size: 124px;
-    line-height: 1.2;
+.halo h1 {
+
+    font-size: 4em;
+    margin: 2px;
+    text-shadow: 1px 1px 1px black;
+
 }
 
-.home-content p {
-    font-style: 18px;
-    margin: 25px 0 30px;
+.halo h2 {
+    font-size: 1.5em;
+    margin: 2px;
 }
 
-.btn {
-    width: 345px;
+
+.halo p {
+    font-size: 1.1em;
+}
+
+.myimg {
+    height: 300px;
+    width: 300px;
+}
+
+.myimg img {
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+
+}
+
+.iconcos {
+    width: 100vw;
+    height: 20vh;
+    background-color: aquamarine;
     display: flex;
-    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
-
-
+.iconcos img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
 
 
 
@@ -144,5 +177,7 @@ nav a:hover {
         text-shadow: 0 0 25px yellow,
             0 0 50px yellow;
     }
+
+
 
 }
