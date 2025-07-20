@@ -7,6 +7,8 @@
     <title>Ilan Patfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./img/icon.jpeg">
+    <meta name="keywords" content="Full Stack,JavaScript, React,Node.js.">
+    <meta name="description" content="Full Stack,JavaScript, React,Node.js.">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -29,7 +31,7 @@
         </nav>
     </header>
 
-    <section class="profile">
+    <main class="profile">
 
         <div class="halo">
 
@@ -50,53 +52,61 @@
         <div class="myimg">
             <img src="./img/profile.jpg" alt="my_img">
         </div>
-    </section>
+    </main>
 
     <section class="iconcos">
         <img src="./img/html5.png" alt="HTML5">
         <img src="./img/css.jpg" alt="CSS">
     </section>
 
-    <section class="about">
-
-        <h2>About</h2>
-
-
-        <p>Hello, my name is Ilan Panker, and I am a Full Stack Developer with a passion for creating clean, fast, and
-            accessible
-            websites and applications. <br>
-
-            I specialize in both frontend and backend development, handling everything from
-            UX/UI
-            planning to full implementation with high performance and responsive design for all devices. <br> <br>
+    <main class="about">
+        <div class="abp">
+            <h2>About</h2>
 
 
-            Over the years, I have gained experience with technologies such as HTML, CSS, JavaScript, React, Node,js,
-            Express,
-            MongoDB, SQL, and more, and I am always eager to keep learning and growing with every new project. <br><br>
+            <p>Hello, my name is Ilan Panker, and I am a Full Stack Developer with a passion for creating clean, fast,
+                and
+                accessible
+                websites and applications. <br>
+
+                I specialize in both frontend and backend development, handling everything from
+                UX/UI
+                planning to full implementation with high performance and responsive design for all devices. <br> <br>
 
 
-            I believe that coding is much more than technology – it is a way to solve real problems, enhance user
-            experiences, and
-            turn ideas into reality.
-            Here, you can explore projects I have built, learn about my workflow, and see my
-            end-to-end
-            development capabilities. <br><br>
+                Over the years, I have gained experience with technologies such as HTML, CSS, JavaScript, React,
+                Node,js,
+                Express,
+                MongoDB, SQL, and more, and I am always eager to keep learning and growing with every new project.
+                <br><br>
 
 
-            If you are looking for a Full Stack Developer who brings quality, precision, and creative thinking to every
-            project – I
-            am here to help.</p>
-    </section>
+                I believe that coding is much more than technology – it is a way to solve real problems, enhance user
+                experiences, and
+                turn ideas into reality.
+                Here, you can explore projects I have built, learn about my workflow, and see my
+                end-to-end
+                development capabilities. <br><br>
+
+
+                If you are looking for a Full Stack Developer who brings quality, precision, and creative thinking to
+                every
+                project – I
+                am here to help.
+            </p>
+        </div>
+    </main>
 
 
 
 
-    <section class="proj">
+    <article class="proj">
 
-        <h2>Project</h2>
+
 
         <div class="pro">
+            <h2>Project</h2>
+
             <div class="card">
                 <img src="./image/water.jpg" alt="water">
                 <h3>Projact 1</h3>
@@ -117,14 +127,42 @@
                     praesentium facere?</p>
             </div>
         </div>
-    </section>
+    </article>
 
     <section class="cont">
+        <form>
+            <h3>Contact Us Form</h3>
 
-        <h3>Contact</h3>
+            <input type="text" id="firsname" placeholder="First Name" required>
+            <input type="text" id="lastname" placeholder="Last Name">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="texy" id="mobile" placeholder="Mobile" required>
+
+            <h4>Type Your Message Here..</h4>
+            <textarea required></textarea>
+            <input type="submit" value="Send" id="button">
+
+        </form>
     </section>
 
-    <footer></footer>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Ilan Panker | Frontend Developer.</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/" target="_blank">
+                    <img src="linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/" target="_blank">
+                    <img src="github-icon.png" alt="GitHub">
+                </a>
+                <a href="mailto:yourmail@example.com">
+                    <img src="email-icon.png" alt="Email">
+                </a>
+            </div>
+        </div>
+
+    </footer>
 
 </body>
 
