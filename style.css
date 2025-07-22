@@ -21,6 +21,37 @@ body {
     margin: 0;
 }
 
+.social-icons-left {
+    position: fixed;
+    top: 40%;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.social-icons-left a {
+    color: #333;
+    font-size: 28px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons-left a:hover {
+    color: #007bff;
+    transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+    .social-icons-left {
+        left: 10px;
+        gap: 15px;
+    }
+
+    .social-icons-left a {
+        font-size: 24px;
+    }
+}
 
 
 /* כפתור toggle */
