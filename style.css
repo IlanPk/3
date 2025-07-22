@@ -21,6 +21,8 @@ body {
     margin: 0;
 }
 
+
+
 /* כפתור toggle */
 .darkToggleLabel {
     position: fixed;
@@ -173,7 +175,7 @@ nav a:hover {
     align-items: center;
     padding: 40px;
     max-width: 1600px;
-    height: 600px;
+    height: 750px;
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #cbe5f5;
