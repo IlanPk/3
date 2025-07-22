@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ilan Patfolio</title>
+    <title>Ilan Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="./img/icon.jpeg">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
 
     <meta name="description"
         content="Ilan Panker | Full Stack Developer Portfolio. I build clean, fast, and accessible websites and applications with a focus on user experience and performance.">
@@ -32,9 +34,9 @@
             <label for="hamburger"><i class="fa-solid fa-bars"></i></label>
 
             <ul>
-                <li><a href="#Home">Home</a></li>
+                <li><a href="#profile">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projact</a></li>
+                <li><a href="#Projects">Projact</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -43,10 +45,22 @@
 
     <aside>
 
+        <div class="social-icons-fixed">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://wa.me/" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="X">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+
         <a href="#" class="upArrow" title="Back to Top">↑</a>
     </aside>
 
-    <section class="profile">
+    <main class="profile" id="profile">
 
         <div class="myimg">
             <img src="./img/profile.jpg" alt="Profile photo of Ilan Panker">
@@ -68,7 +82,7 @@
 
         </div>
 
-    </section>
+    </main>
 
 
     </section>
@@ -78,7 +92,7 @@
         <img src="./img/css.jpg" alt="CSS" loading="lazy">
     </section>
 
-    <section id="about">
+    <main id="about">
         <h2>About Me</h2>
 
         <p>Hello, my name is Ilan Panker, and I am a Full Stack Developer with a passion for creating clean, fast, and
@@ -99,36 +113,36 @@
 
         <p>If you are looking for a Full Stack Developer who brings quality, precision, and creative thinking to every
             project – I am here to help.</p>
-    </section>
+    </main>
 
     <section class="gallery">
-        <h2>My Projects</h2>
+        <h2>My Pictures</h2>
         <div class="gallery-container">
             <div class="gallery-item">
-                <img src="./img/project1.jpg" alt="Project 1" loading="lazy">
-                <p>Project 1</p>
+                <img src="./img/fame1 (1).jpeg" alt="Project1" loading="lazy">
+                <p></p>
             </div>
             <div class="gallery-item">
-                <img src="./img/project2.jpg" alt="Project 2" loading="lazy">
-                <p>Project 2</p>
+                <img src="./img/fame2.jpeg" alt="Project2" loading="lazy">
+                <p></p>
             </div>
             <div class="gallery-item">
-                <img src="./img/project3.jpg" alt="Project 3" loading="lazy">
-                <p>Project 3</p>
+                <img src="./img/famel3.jpeg" alt="Project3" loading="lazy">
+                <p></p>
             </div>
             <div class="gallery-item">
-                <img src="./img/project4.jpg" alt="Project 4" loading="lazy">
-                <p>Project 4</p>
+                <img src="./img/fame4.jpeg" alt="Project4" loading="lazy">
+                <p></p>
             </div>
         </div>
     </section>
 
 
-    <section id="projects">
-        <h2>My Projects</h2>
+    <article id="projects">
+        <h2>My Project</h2>
 
         <div class="project-card">
-            <img src="./img/coomin.png" alt="coomin 1" loading="lazy">
+            <img src="./img/coomin.png" alt="coomin1" loading="lazy">
             <div class="project-content">
                 <h3>Project Title</h3>
                 <p>
@@ -141,10 +155,10 @@
             </div>
         </div>
 
-    </section>
+    </article>
 
 
-    <section id="contact">
+    <main id="contact">
         <h2>Contact Me</h2>
         <form class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>
@@ -153,11 +167,11 @@
             <button type="submit">Send Message</button>
         </form>
 
-        <a href="https://github.com/YourGitHubUsername" class="github-btn" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/IlanPk" class="github-btn" target="_blank" rel="noopener noreferrer">
             <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub Logo" loading="lazy" />
             View My GitHub
         </a>
-    </section>
+    </main>
 
 
 
