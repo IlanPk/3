@@ -14,7 +14,12 @@
 </head>
 
 <body>
+
+    <input type="checkbox" id="darkToggle" hidden>
+    <label for="darkToggle" class="darkToggleLabel">🌙 Dark Mode</label>
+
     <header>
+
         <nav>
             <a href="#Home" id="logo">Ilan<span>Pk</span></a>
             <input type="checkbox" id="hamburger" />
@@ -22,12 +27,18 @@
 
             <ul>
                 <li><a href="#Home">Home</a></li>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Projact">Projact</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projact</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
+
+
+    <aside>
+
+        <a href="#" class="upArrow" title="Back to Top">↑</a>
+    </aside>
 
     <section class="profile">
 
@@ -61,7 +72,7 @@
         <img src="./img/css.jpg" alt="CSS">
     </section>
 
-    <section class="about">
+    <section id="about">
         <h2>About Me</h2>
 
         <p>Hello, my name is Ilan Panker, and I am a Full Stack Developer with a passion for creating clean, fast, and
@@ -84,11 +95,34 @@
             project – I am here to help.</p>
     </section>
 
-    <section class="projects">
+    <section class="gallery">
+        <h2>My Projects</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="./img/project1.jpg" alt="Project 1">
+                <p>Project 1</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/project2.jpg" alt="Project 2">
+                <p>Project 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/project3.jpg" alt="Project 3">
+                <p>Project 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="./img/project4.jpg" alt="Project 4">
+                <p>Project 4</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects">
         <h2>My Projects</h2>
 
         <div class="project-card">
-            <img src="./img/project1.jpg" alt="Project 1">
+            <img src="./img/coomin.png" alt="coomin 1">
             <div class="project-content">
                 <h3>Project Title</h3>
                 <p>
@@ -104,7 +138,7 @@
     </section>
 
 
-    <section class="contact">
+    <section id="contact">
         <h2>Contact Me</h2>
         <form class="contact-form">
             <input type="text" name="name" placeholder="Your Name" required>

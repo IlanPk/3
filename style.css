@@ -11,7 +11,87 @@ html {
 
 }
 
+/* בסיס האתר */
+body {
+    background: #f9f9f9;
+    color: #222;
+    font-family: Arial, sans-serif;
+    transition: background 0.4s ease, color 0.4s ease;
+    padding: 0;
+    margin: 0;
+}
 
+/* כפתור toggle */
+.darkToggleLabel {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #007acc;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    user-select: none;
+    z-index: 9999;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, transform 0.3s ease;
+
+}
+
+.darkToggleLabel:hover {
+    background: #005fa3;
+    transform: scale(1.05);
+}
+
+/* מצב כהה */
+#darkToggle:checked~* {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+/* מצבים מותאמים לאלמנטים באתר שלך */
+#darkToggle:checked~nav {
+    background: #1e1e1e;
+}
+
+#darkToggle:checked~footer {
+    background: #1e1e1e;
+}
+
+#darkToggle:checked~.upArrow {
+    background: #333;
+}
+
+#darkToggle:checked~.upArrow:hover {
+    background: #555;
+}
+
+#darkToggle:checked~.profile,
+#darkToggle:checked~#about,
+#darkToggle:checked~#projects,
+#darkToggle:checked~.iconcos {
+    background: #1e1e1e;
+    color: #ddd;
+}
+
+/* רספונסיביות למובייל */
+@media (max-width: 768px) {
+    .darkToggleLabel {
+        top: 100px;
+        right: 20px;
+        font-size: 0.85rem;
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .darkToggleLabel {
+        top: 10px;
+        right: 10px;
+        font-size: 0.8rem;
+        padding: 7px 10px;
+    }
+}
 
 nav {
     width: 100vw;
@@ -41,7 +121,8 @@ nav a {
 }
 
 span {
-    color: yellow;
+    color:
+        #4a90e2;
 }
 
 
@@ -72,7 +153,7 @@ nav a:hover {
     text-shadow: 0 0 25px yellow,
         0 0 50px yellow;
     transition: width 0.3s ease;
-    border-radius: 0.5em;
+
 }
 
 .active {
@@ -87,7 +168,7 @@ nav a:hover {
 
 .profile {
     display: flex;
-    gap: 30px;
+    gap: 100px;
     align-items: center;
     padding: 40px;
     max-width: 900px;
@@ -181,9 +262,55 @@ nav a:hover {
     }
 }
 
+.upArrow {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: #007acc;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 60px;
+    text-decoration: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 122, 204, 0.4);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    z-index: 999;
+}
 
+.upArrow:hover {
+    transform: scale(1.15) rotate(-10deg);
+    background: #005fa3;
+    box-shadow: 0 8px 20px rgba(0, 95, 163, 0.5);
+}
 
-.about {
+/* רספונסיביות למובייל */
+@media (max-width: 768px) {
+    .upArrow {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+        line-height: 50px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .upArrow {
+        width: 45px;
+        height: 45px;
+        font-size: 1.3rem;
+        line-height: 45px;
+        bottom: 15px;
+        right: 15px;
+    }
+}
+
+#about {
     width: 90%;
     max-width: 800px;
     margin: 100px auto;
@@ -197,7 +324,7 @@ nav a:hover {
     font-family: 'Segoe UI', sans-serif;
 }
 
-.about h2 {
+#about h2 {
     font-size: 2rem;
     text-align: center;
     color: #333;
@@ -205,7 +332,7 @@ nav a:hover {
     position: relative;
 }
 
-.about h2::after {
+#about h2::after {
     content: "";
     display: block;
     width: 60px;
@@ -215,7 +342,7 @@ nav a:hover {
     border-radius: 2px;
 }
 
-.about p {
+#about p {
     font-size: 1.1rem;
     line-height: 1.7;
     color: #555;
@@ -232,20 +359,75 @@ nav a:hover {
 
 /* רספונסיביות למובייל */
 @media (max-width: 600px) {
-    .about {
+    #about {
         padding: 20px;
     }
 
-    .about h2 {
+    #about h2 {
         font-size: 1.5rem;
     }
 
-    .about p {
+    #about p {
         font-size: 1rem;
     }
 }
 
-.projects {
+
+.gallery {
+    text-align: center;
+    padding: 50px 20px;
+    background: #f9f9f9;
+}
+
+.gallery h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #007acc;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.gallery-item {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+.gallery-item p {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+}
+
+
+
+#projects {
     width: 90%;
     max-width: 1000px;
     margin: 100px auto;
@@ -253,14 +435,14 @@ nav a:hover {
     font-family: 'Segoe UI', sans-serif;
 }
 
-.projects h2 {
+#projects h2 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 40px;
     position: relative;
 }
 
-.projects h2::after {
+#projects h2::after {
     content: "";
     display: block;
     width: 60px;
@@ -337,7 +519,7 @@ nav a:hover {
     }
 }
 
-.contact {
+#contact {
     width: 90%;
     max-width: 500px;
     margin: 100px auto;
@@ -349,14 +531,14 @@ nav a:hover {
     font-family: 'Segoe UI', sans-serif;
 }
 
-.contact h2 {
+#contact h2 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 20px;
     position: relative;
 }
 
-.contact h2::after {
+#contact h2::after {
     content: "";
     display: block;
     width: 60px;
@@ -382,8 +564,8 @@ nav a:hover {
     resize: vertical;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
+#contact-form input:focus,
+#contact-form textarea:focus {
     border-color: #007acc;
     box-shadow: 0 0 5px rgba(0, 122, 204, 0.3);
     outline: none;
@@ -431,7 +613,7 @@ nav a:hover {
 
 /* רספונסיביות */
 @media (max-width: 500px) {
-    .contact {
+    #contact {
         padding: 20px;
     }
 }
@@ -676,11 +858,11 @@ nav a:hover {
             padding: 25px;
         }
 
-        .about h2 {
+        #about h2 {
             font-size: 32px;
         }
 
-        .about p {
+        #about p {
             font-size: 16px;
         }
     }
@@ -690,12 +872,12 @@ nav a:hover {
             padding: 20px;
         }
 
-        .about h2 {
+        #about h2 {
             font-size: 28px;
             padding: 12px 15px;
         }
 
-        .about p {
+        #about p {
             font-size: 15px;
         }
     }
@@ -706,12 +888,12 @@ nav a:hover {
             padding: 15px;
         }
 
-        .about h2 {
+        #about h2 {
             font-size: 24px;
             padding: 10px 12px;
         }
 
-        .about p {
+        #about p {
             font-size: 14px;
         }
     }
@@ -745,6 +927,7 @@ nav a:hover {
             align-items: center;
             justify-content: flex-start;
             padding: 30px 10px;
+            padding-top: 120px;
         }
 
         .halo {
